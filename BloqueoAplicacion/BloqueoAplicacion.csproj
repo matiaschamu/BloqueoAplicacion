@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HardwareData, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BibliotecaMaf.Clases.HardwareData.HardwareData.1.0.0.4\lib\HardwareData.dll</HintPath>
+    </Reference>
+    <Reference Include="Rutinas, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BibliotecaMaf.Clases.Rutinas.Utilidades.1.0.0.4\lib\Rutinas.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -62,6 +68,9 @@
     <EmbeddedResource Include="Bloqueo.resx">
       <DependentUpon>Bloqueo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DesbloqueoSowart.resx">
+      <DependentUpon>DesbloqueoSowart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -69,12 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Iconos\Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Clases\HardwareData\HardwareData\HardwareData.csproj">
-      <Project>{99c1bd86-3d76-48ed-966e-d0f38dd74b4c}</Project>
-      <Name>HardwareData</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
